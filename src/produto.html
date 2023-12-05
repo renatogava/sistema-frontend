@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Cadastre-se</title>
+
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css" type="text/css">
+
+    <link rel="stylesheet" href="cadastro.css" type="text/css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Novo Produto</h1>
+
+            <img width="279" height="108" src="../logo.png" />
+
+            <form id="frmCadastro">
+                <div class="row">
+                    <div class="left">
+                        <label for="txtNomeProduto">Nome do Produto</label>
+                        <input type="text" class="input-field" id="txtNomeProduto" />
+                    </div>
+                    <div class="left">
+                        <label for="txtCodigoProduto">Código do Produto</label>
+                        <input type="text" class="input-field" id="txtCodigoProduto" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="txtPreco">Preço</label>
+                        <input type="number" class="input-field" id="txtPreco" />
+                    </div>
+                    <div>
+                        <label for="txtQtdeEstoque">Qtde em Estoque</label>
+                        <input type="number" class="input-field" id="txtQtdeEstoque" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button>Salvar</button>
+                </div>
+
+            </form>
+
+            <span id="spnErro" class="erro"></span>
+
+        </div>
+    </div>
+
+    <script src="produto.js"></script>
+</body>
+</html>

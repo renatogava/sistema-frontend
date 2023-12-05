@@ -3,7 +3,7 @@ window.onload = function (e) {
     var usuarioGuid = localStorage.getItem("usuarioGuid");
 
     if (usuarioGuid == null) {
-        //window.location.href = "login.html";
+        window.location.href = "login.html";
     }
     else {
         obterUsuario(usuarioGuid);
