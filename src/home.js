@@ -18,14 +18,17 @@ window.onload = function (e) {
         window.location.href = "login.html";
     };
 
-    var menu = document.getElementById("menu");
+    var icon = document.querySelector(".icon");
 
-    menu.onclick = function (e) {
-        var x = document.getElementById("menu");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+    icon.onclick = function (e) {
+
+        var menu = document.querySelector(".topnav");
+
+        if (menu.className == "topnav") {
+            menu.className += " open";
+        }
+        else {
+            menu.className = "topnav";
         }
     }
 
