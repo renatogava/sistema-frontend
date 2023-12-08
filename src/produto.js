@@ -1,5 +1,9 @@
 ﻿window.onload = function (e) {
 
+    
+    var link = document.querySelector('.topnav a[href=\'produto.html\']');
+    link.className = 'active';
+
     var usuarioGuid = localStorage.getItem("usuarioGuid");
 
     if (usuarioGuid == null) {
